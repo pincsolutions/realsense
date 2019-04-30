@@ -7,7 +7,7 @@ https://github.com/IntelRealSense/librealsense/blob/master/third-party/libtm/lib
 <launch>
   <arg name="serial_no"           default=""/>
   <arg name="json_file_path"      default=""/>
-  <arg name="camera"              default="realsense"/>
+  <arg name="camera"              default="camera"/>
   <arg name="tf_prefix"           default="$(arg camera)"/>
 
   <arg name="fisheye_width"       default="848"/> 

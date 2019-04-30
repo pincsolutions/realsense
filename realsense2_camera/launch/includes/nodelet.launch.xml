@@ -50,7 +50,7 @@
   <arg name="fisheye2_frame_id"         default="$(arg tf_prefix)_fisheye2_frame"/>
   <arg name="accel_frame_id"            default="$(arg tf_prefix)_accel_frame"/>
   <arg name="gyro_frame_id"             default="$(arg tf_prefix)_gyro_frame"/>
-  <arg name="pose_frame_id"             default="$(arg tf_prefix)_pose_frame"/>
+  <arg name="pose_frame_id"             default="realsense_camera_center"/>
 
   <arg name="depth_optical_frame_id"    default="$(arg tf_prefix)_depth_optical_frame"/>
   <arg name="infra1_optical_frame_id"   default="$(arg tf_prefix)_infra1_optical_frame"/>
@@ -70,10 +70,10 @@
   <arg name="aligned_depth_to_fisheye1_frame_id" default="$(arg tf_prefix)_aligned_depth_to_fisheye1_frame"/>
   <arg name="aligned_depth_to_fisheye2_frame_id" default="$(arg tf_prefix)_aligned_depth_to_fisheye2_frame"/>
 
-  <arg name="odom_frame_id"            default="$(arg tf_prefix)_odom_frame"/>
+  <arg name="odom_frame_id"            default="local_origin"/>
   <arg name="topic_odom_in"            default="$(arg tf_prefix)/odom_in"/>
   <arg name="calib_odom_file"          default=""/>
-  <arg name="publish_odom_tf"          default="true"/>
+  <arg name="publish_odom_tf"          default="false"/>
   <arg name="filters"                  default=""/>
   <arg name="clip_distance"            default="-1"/>
   <arg name="linear_accel_cov"         default="0.01"/>
